@@ -1,0 +1,234 @@
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(235, 235, 235);
+}
+
+/*** FIXED SIDE BAR ON TABLET AND DESKTOP ***/
+#side-menu h6 {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+@media (min-width:768px) {
+
+    body.with-menu {
+        margin-left: 230px;
+    }
+
+    .navbar.fixed-left .navbar-collapse .navbar-nav .nav-item {
+        width: 100%;
+    }
+
+    navbar.fixed-left .navbar-collapse {
+        flex-grow: 0;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar.fixed-left {
+        right: auto;
+    }
+
+    .navbar.fixed-left {
+        bottom: 0;
+        width: 230px;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+    }
+
+    .navbar.fixed-left {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+    }
+
+    .navbar.fixed-left .navbar-collapse {
+        flex-grow: 0;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar.fixed-left .navbar-collapse .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar.fixed-left .navbar-collapse .navbar-nav .nav-item {
+        width: 100%;
+    }
+}
+
+.nav-item button:hover {
+    background-color: #4A2461;
+    border-color: #4A2461;
+}
+
+.nav-item i {
+    color: grey;
+}
+
+.nav-item:hover i,
+.navbar-nav .active i {
+    color: #7F1E68;
+}
+
+/*** HOME HEADER ***/
+
+#page-header {
+    background: url(./images/hero.jpg) no-repeat;
+    background-size: cover;
+    background-position: left;
+    height: 550px;
+    width: auto;
+}
+
+.container-header {
+    height: 550px;
+}
+
+header a {
+    opacity: 0.8;
+}
+
+/*** TABLE TOP 5 ***/
+
+.first-line {
+    font-size: 0.9rem;
+}
+
+#top-five .fa-play-circle {
+    color: #7F1E68;
+}
+
+.title-top-five p {
+    margin: auto;
+}
+
+.title-top-five:hover {
+    background-color: #e4e4e4 !important;
+    transition: 1s;
+}
+
+.img-top-five {
+    height: 50px;
+    width: 50px;
+}
+
+.img-top-five img {
+    width: 100%;
+    height: 100%;
+}
+
+#top-five .title {
+    width: 300px;
+    line-height: 40px;
+}
+
+@media (min-width:768px) {
+    #top-five .fa-play-circle {
+        color: rgba(127, 30, 104, 0.3);
+    }
+
+    #top-five .title-top-five:hover .fa-play-circle {
+        color: #7F1E68;
+        cursor: pointer;
+        transition: 1s;
+    }
+}
+
+/*** MODAL AUDIO PLAYER ***/
+.modal-content {
+    background-color: transparent;
+    border: none;
+}
+
+.cover img {
+    width: 100%;
+    height: auto;
+}
+
+#slider {
+	width: 182px;
+	height: 4px;
+	background: #ebebeb;
+   border-radius: 2px;
+}
+
+#slider div {
+      width: 4px;
+      height: 4px;
+      margin-top: 1px;
+      background: #4A2461;
+      border-radius: 2px;
+}
+
+.controls i {
+    cursor: pointer;
+}
+
+
+/*** ALBUMS ***/
+
+.card-box-img i {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.5);
+    transition: 1s;
+}
+
+.card img {
+    opacity: 0.7;
+    transition: 1s;
+}
+
+.card:hover.card img{
+    opacity: 1;
+}
+
+.card:hover .card-box-img i {
+    color: white;
+}
+
+/*** FOOTER ***/
+
+.logo-footer {
+    width: 50px;
+    height: auto;
+}
+
+/*** PAGE TARIFS ***/
+#tarifs .card h4 {
+    color: #4A2461;
+}
+
+#tarifs .card-footer {
+    font-size: 0.9rem;
+}
+
+/*** PAGE CONNEXION ***/
+.btn-facebook {
+    background-color: #3a61b3;
+    border: none;
+}
+
+.btn-connexion,
+.btn-tarifs {
+    background-color: #4A2461;
+    border: none;
+}
+
+.btn-connexion:hover,
+.btn-tarifs:hover {
+    background-color: rgb(61, 32, 79);
+    border: none;
+}
+
+.btn-new-account {
+    color: #4A2461;
+}
