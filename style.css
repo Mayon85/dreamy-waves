@@ -12,6 +12,11 @@ body {
     font-weight: 600;
 }
 
+.nav-logo {
+    height: 80px;
+    width: auto;
+}
+
 @media (min-width:768px) {
 
     body.with-menu {
@@ -91,7 +96,7 @@ body {
     height: 550px;
 }
 
-header a {
+header .btn-header {
     opacity: 0.8;
 }
 
