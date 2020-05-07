@@ -31,18 +31,19 @@
 </head>
 
 
-<body class="with-menu">
+<body id="main" class="with-menu">
 
   <!-- SIDEBAR -->
 
   <section id="side-menu">
 
-    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-left">
+    <nav id="slide-menu" class="navbar navbar-expand-md navbar-light bg-light fixed-left">
+      <a href="javascript:void(0)" class="closebtn text-secondary text-decoration-none" onclick="closeNav()">&times;</a>
       <a class="navbar-brand align-self-center m-0" href="index.html">
-        <img class="nav-logo" src="./images/logo.png" alt="Logo de Dreamy Waves">
+        <img class="nav-logo" src="./images/logo.svg" alt="Logo de Dreamy Waves">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarsNav" aria-expanded="false" aria-label="Toggle navigation">
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -51,14 +52,14 @@
         <ul class="navbar-nav">
           <li class="nav-item d-flex align-items-center">
             <i class="fas fa-search mr-1"></i>
-            <a class="nav-link text-dark text-dark" href="#discover">Découvrir</a>
+            <a class="nav-link text-dark text-dark" href="#discover" >Découvrir</a>
           </li>
           <li class="nav-item d-flex align-items-center">
             <i class="fas fa-credit-card mr-1"></i>
             <a class="nav-link text-dark" href="tarifs.html">Premium</a>
           </li>
           <li class="nav-item text-center">
-            <a class="nav-link text-dark btn btn-outline-secondary rounded-pill" href="connexion.html">
+            <a class="nav-link text-white btn btn-outline-secondary rounded-pill btn-nav-connect" href="connexion.html">
               Se connecter</a>
           </li>
         </ul>
@@ -93,6 +94,8 @@
       </div>
     </nav>
 
+    <span class="open-menu" onclick="openNav()"> <i class="fas fa-ellipsis-v"></i> </span>
+
   </section>
 
 
@@ -105,7 +108,7 @@
           <h1>Relax, dream, enjoy</h1>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
           </p>
-          <a href="#discover" class="btn btn-light rounded-pill text-uppercase btn-header">Découvrir Dreamy Waves</a>
+          <a href="#discover" class="btn btn-light rounded-pill btn-header">Découvrir Dreamy Waves</a>
         </div>
       </div>
     </div>
@@ -134,8 +137,7 @@
                 </button>
 
                 <!-- Modal -->
-                <div class="modal fade" id="Modal1" tabindex="-1" role="dialog"
-                  aria-hidden="true">
+                <div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-hidden="true">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
 
@@ -195,7 +197,8 @@
                           <div class="container">
                             <div class="row justify-content-around align-items-center">
                               <h6>Pour écouter cette playlist en entier</h6>
-                              <a class="btn btn-connexion text-white rounded-pill">Connectez-vous</a>
+                              <a href="connexion.html"
+                                class="btn btn-connexion text-white rounded-pill">Connectez-vous</a>
                             </div>
                           </div>
                         </div>
@@ -227,7 +230,7 @@
 
                 <!-- Modal -->
                 <div class="modal fade" id="Modal2" tabindex="-1" role="dialog" "
-                  aria-hidden="true">
+                  aria-hidden=" true">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
 
@@ -289,7 +292,8 @@
                           <div class="container">
                             <div class="row justify-content-around align-items-center">
                               <h6>Pour écouter cette playlist en entier</h6>
-                              <a class="btn btn-connexion text-white rounded-pill">Connectez-vous</a>
+                              <a href="connexion.html"
+                                class="btn btn-connexion text-white rounded-pill">Connectez-vous</a>
                             </div>
                           </div>
                         </div>
@@ -317,8 +321,7 @@
                 </button>
 
                 <!-- Modal -->
-                <div class="modal fade" id="Modal3" tabindex="-1" role="dialog"
-                  aria-hidden="true">
+                <div class="modal fade" id="Modal3" tabindex="-1" role="dialog" aria-hidden="true">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
 
@@ -342,8 +345,8 @@
                             <!-- MUSIC TITLES-->
                             <div class="col-md-7 info">
 
-                              <h3>Extrait de Mozart</h3>
-                              <h5>Classical Music for Brain Power</h5>
+                              <h3>Good Night</h3>
+                              <h5>Jazz music</h5>
 
                               <!-- PLAY THE MUSIC -->
                               <div class="button-items">
@@ -378,7 +381,8 @@
                           <div class="container">
                             <div class="row justify-content-around align-items-center">
                               <h6>Pour écouter cette playlist en entier</h6>
-                              <a class="btn btn-connexion text-white rounded-pill">Connectez-vous</a>
+                              <a href="connexion.html"
+                                class="btn btn-connexion text-white rounded-pill">Connectez-vous</a>
                             </div>
                           </div>
                         </div>
@@ -407,8 +411,7 @@
                 </button>
 
                 <!-- Modal -->
-                <div class="modal fade" id="Modal4" tabindex="-1" role="dialog" 
-                  aria-hidden="true">
+                <div class="modal fade" id="Modal4" tabindex="-1" role="dialog" aria-hidden="true">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
 
@@ -432,8 +435,8 @@
                             <!-- MUSIC TITLES-->
                             <div class="col-md-7 info">
 
-                              <h3>Extrait de Mozart</h3>
-                              <h5>Classical Music for Brain Power</h5>
+                              <h3>Prélude de Chopin</h3>
+                              <h5>Classic music on piano</h5>
 
                               <!-- PLAY THE MUSIC -->
                               <div class="button-items">
@@ -468,7 +471,8 @@
                           <div class="container">
                             <div class="row justify-content-around align-items-center">
                               <h6>Pour écouter cette playlist en entier</h6>
-                              <a class="btn btn-connexion text-white rounded-pill">Connectez-vous</a>
+                              <a href="connexion.html"
+                                class="btn btn-connexion text-white rounded-pill">Connectez-vous</a>
                             </div>
                           </div>
                         </div>
@@ -496,8 +500,7 @@
                 </button>
 
                 <!-- Modal -->
-                <div class="modal fade" id="Modal5" tabindex="-1" role="dialog"
-                  aria-hidden="true">
+                <div class="modal fade" id="Modal5" tabindex="-1" role="dialog" aria-hidden="true">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
 
@@ -521,12 +524,12 @@
                             <!-- MUSIC TITLES-->
                             <div class="col-md-7 info">
 
-                              <h3>Extrait de Mozart</h3>
-                              <h5>Classical Music for Brain Power</h5>
+                              <h3>Guitare Acoustique</h3>
+                              <h5>Musique Douce</h5>
 
                               <!-- PLAY THE MUSIC -->
                               <div class="button-items">
-                                <audio id="music" preload="auto" loop="false">
+                                <audio id="music" preload="auto">
                                   <source src="./audio/top5_guitare.mp3" type="audio/mp3">
                                 </audio>
 
@@ -557,7 +560,8 @@
                           <div class="container">
                             <div class="row justify-content-around align-items-center">
                               <h6>Pour écouter cette playlist en entier</h6>
-                              <a class="btn btn-connexion text-white rounded-pill">Connectez-vous</a>
+                              <a href="connexion.html"
+                                class="btn btn-connexion text-white rounded-pill">Connectez-vous</a>
                             </div>
                           </div>
                         </div>
@@ -577,6 +581,7 @@
           </div>
         </div>
       </div>
+    </div>
 
   </section>
 
@@ -587,58 +592,63 @@
     <div class="container-fluid my-5">
       <div class="row justify-content-center">
         <div class="col-md-10">
-          <h4 class="mb-4 font-weight-bold">Albums de la semaine</h4>
+          <h4 class="mb-4 font-weight-bold">Collections de la semaine</h4>
 
           <div class="row justify-content-between">
 
-            <div class="card  col-lg-3 col-md-6">
-              <a href="#" class="text-decoration-none text-dark">
+            <div class="card  col-lg-3 col-sm-6">
+              <a href="#" class="video text-decoration-none text-dark"
+                data-video="https://www.youtube.com/embed/5qap5aO4i9A" data-toggle="modal" data-target="#videoModal">
                 <div class="card-box-img m-auto p-3 position-relative">
                   <img src="./images/albums/album1.png" class="img-fluid card-img-top shadow" alt="...">
                   <i class="far fa-play-circle fa-5x position-absolute"></i>
                 </div>
-                <div class="card-body">
-                  <h5 class="card-title text-center">Album1</h5>
-                  <p class="card-text text-center">Lorem ipsum dolor sit amet.</p>
+                <div class="card-body text-center">
+                  <h5>Album1</h5>
+                  <p>Lorem ipsum dolor sit amet.</p>
                 </div>
               </a>
             </div>
 
-            <div class="card col-lg-3 col-md-6">
-              <a href="#" class="text-decoration-none text-dark">
+
+            <div class="card col-lg-3 col-sm-6">
+              <a href="#" class="video text-decoration-none text-dark"
+                data-video="https://www.youtube.com/embed/_WU5Z9Or_Rc" data-toggle="modal" data-target="#videoModal">
                 <div class="card-box-img m-auto p-3 position-relative">
                   <img src="./images/albums/album2.png" class="img-fluid card-img-top shadow" alt="...">
                   <i class="far fa-play-circle fa-5x position-absolute"></i>
                 </div>
-                <div class="card-body">
-                  <h5 class="card-title text-center">Album2</h5>
-                  <p class="card-text text-center">Lorem ipsum dolor sit amet.</p>
+                <div class="card-body text-center">
+                  <h5>Album2</h5>
+                  <p>Lorem ipsum dolor sit amet.</p>
                 </div>
               </a>
             </div>
 
-            <div class="card col-lg-3 col-md-6">
-              <a href="#" class="text-decoration-none text-dark">
+            <div class="card col-lg-3 col-sm-6">
+              <a href="#" class="video text-decoration-none text-dark"
+                data-video="https://www.youtube.com/embed/iloh1SUe42g" data-toggle="modal" data-target="#videoModal">
                 <div class="card-box-img m-auto p-3 position-relative">
                   <img src="./images/albums/album3.png" class="img-fluid card-img-top shadow" alt="...">
                   <i class="far fa-play-circle fa-5x position-absolute"></i>
                 </div>
-                <div class="card-body">
-                  <h5 class="card-title text-center">Album3</h5>
-                  <p class="card-text text-center">Lorem ipsum dolor sit amet.</p>
+                <div class="card-body text-center">
+                  <h5>Album3</h5>
+                  <p>Lorem ipsum dolor sit amet.</p>
                 </div>
               </a>
             </div>
 
-            <div class="card col-lg-3 col-md-6">
-              <a href="#" class="text-decoration-none text-dark">
+            <div class="card col-lg-3 col-sm-6">
+              <a href="#" class="video text-decoration-none text-dark"
+                data-video="https://www.youtube.com/embed/h287bt6jSjA" data-toggle="modal" data-target="#videoModal">
                 <div class="card-box-img m-auto p-3 position-relative">
                   <img src="./images/albums/album4.png" class="img-fluid card-img-top shadow" alt="...">
                   <i class="far fa-play-circle fa-5x position-absolute"></i>
                 </div>
-                <div class="card-body">
-                  <h5 class="card-title text-center">Album4</h5>
-                  <p class="card-text text-center">Lorem ipsum dolor sit amet.</p>
+                <div class="card-body text-center">
+                  <h5>Album4</h5>
+                  <p>Lorem ipsum dolor sit amet.</p>
                 </div>
               </a>
             </div>
@@ -647,9 +657,22 @@
       </div>
     </div>
 
-
-
   </section>
+
+  <!-- VIDEO MODAL -->
+
+  <div class="modal fade" id="videoModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+          <iframe src="" frameborder="0" height="350" width="100%" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- DECOUVRIR -->
 
@@ -668,12 +691,14 @@
             <div class="row mb-4">
               <div class="col-lg-6">
                 <h4 class="font-weight-bold">Relax.</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam ad, recusandae dolor incidunt
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam ad, recusandae dolor
+                  incidunt
                   corporis maiores?</p>
               </div>
               <div class="col-lg-6">
                 <h4 class="font-weight-bold">Dream.</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam ad, recusandae dolor incidunt
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam ad, recusandae dolor
+                  incidunt
                   corporis maiores?</p>
               </div>
             </div>
@@ -681,12 +706,14 @@
             <div class="row">
               <div class="col-lg-6">
                 <h4 class="font-weight-bold">Enjoy.</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam ad, recusandae dolor incidunt
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam ad, recusandae dolor
+                  incidunt
                   corporis maiores?</p>
               </div>
               <div class="col-lg-6">
                 <h4 class="font-weight-bold">Everywhere.</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam ad, recusandae dolor incidunt
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam ad, recusandae dolor
+                  incidunt
                   corporis maiores?</p>
               </div>
             </div>
@@ -705,17 +732,17 @@
 
       <div class="row bg-white shadow p-4 px-5 my-2 rounded justify-content-between align-items-center">
         <h5>Essayez gratuitement Dreamy Waves pendant 15 jours</h5>
-        <a href="tarifs.html" class="btn btn-secondary px-4 text-uppercase rounded-pill btn-tarifs"> En Savoir Plus</a>
+        <a href="tarifs.html" class="btn btn-secondary px-4 rounded-pill btn-tarifs"> En Savoir Plus</a>
       </div>
 
       <div class="row bg-white shadow p-4 px-5 my-2 rounded justify-content-between align-items-center">
         <h5>Inscrivez-vous à Dreamy Waves Premium</h5>
-        <a href="tarifs.html" class="btn btn-secondary px-4 text-uppercase rounded-pill btn-tarifs"> En Savoir Plus</a>
+        <a href="tarifs.html" class="btn btn-secondary px-4 rounded-pill btn-tarifs"> En Savoir Plus</a>
       </div>
 
       <div class="row bg-white shadow p-4 px-5 my-2 rounded justify-content-between align-items-center">
         <h5>Profitez de notre tarif préférentiel unique Dreamy Waves</h5>
-        <a href="tarifs.html" class="btn btn-secondary px-4 text-uppercase rounded-pill btn-tarifs"> En Savoir Plus</a>
+        <a href="tarifs.html" class="btn btn-secondary px-4 rounded-pill btn-tarifs"> En Savoir Plus</a>
       </div>
     </div>
   </section>

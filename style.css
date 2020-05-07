@@ -6,7 +6,8 @@ body {
     background-color: rgb(235, 235, 235);
 }
 
-/*** FIXED SIDE BAR ON TABLET AND DESKTOP ***/
+/*** SIDE BAR MENU ***/
+
 #side-menu h6 {
     font-size: 0.8rem;
     font-weight: 600;
@@ -17,17 +18,89 @@ body {
     width: auto;
 }
 
+.nav-item i {
+    color: grey;
+}
+
+.nav-item:hover i,
+.navbar-nav .active i {
+    color: #7F1E68;
+}
+
+.btn-nav-connect {
+    max-width: 300px;
+    background-color: #4A2461;
+}
+
+.btn-nav-connect:hover {
+    background-color: rgb(55, 20, 76) ;
+    border-color: rgb(55, 20, 76);
+}
+
+/*** MOBILE MENU ON TOP ***/
+@media (max-width:768px) {
+
+    .navbar .closebtn {
+        display: none;
+    }
+
+    .open-menu {
+        display: none;
+    }
+
+    #main {
+        margin-left: 0;
+    }
+}
+
+/*** ANIMATED SIDE BAR ON TABLET ***/
 @media (min-width:768px) {
 
-    body.with-menu {
+    .navbar {
+        height: 100%;
+        width: 0;
+        /* 0 width - change this with JavaScript */
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        padding-top: 60px;
+        transition: 0.5s;
+        padding: 0;
+    }
+
+    .navbar .closebtn {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    .open-menu {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+        position: fixed;
+    }
+
+    #main {
         margin-left: 230px;
+        transition: margin-left .5s;
+    }
+
+    .navbar-nav {
+        padding: 20px;
     }
 
     .navbar.fixed-left .navbar-collapse .navbar-nav .nav-item {
         width: 100%;
     }
 
-    navbar.fixed-left .navbar-collapse {
+    .navbar.fixed-left .navbar-collapse {
         flex-grow: 0;
         flex-direction: column;
         width: 100%;
@@ -68,18 +141,24 @@ body {
     }
 }
 
-.nav-item button:hover {
-    background-color: #4A2461;
-    border-color: #4A2461;
-}
 
-.nav-item i {
-    color: grey;
-}
+/*** FIXED SIDE BAR ON DESKTOP ***/
+@media (min-width:992px) {
+    .navbar {
+        height: 100%;
+        width: 230px;
+        position: fixed;
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
 
-.nav-item:hover i,
-.navbar-nav .active i {
-    color: #7F1E68;
+    .navbar .closebtn {
+        display: none;
+    }
+
+    .open-menu {
+        display: none;
+    }
 }
 
 /*** HOME HEADER ***/
@@ -158,18 +237,18 @@ header .btn-header {
 }
 
 #slider {
-	width: 182px;
-	height: 4px;
-	background: #ebebeb;
-   border-radius: 2px;
+    width: 182px;
+    height: 4px;
+    background: #ebebeb;
+    border-radius: 2px;
 }
 
 #slider div {
-      width: 4px;
-      height: 4px;
-      margin-top: 1px;
-      background: #4A2461;
-      border-radius: 2px;
+    width: 4px;
+    height: 4px;
+    margin-top: 1px;
+    background: #4A2461;
+    border-radius: 2px;
 }
 
 .controls i {
@@ -192,7 +271,7 @@ header .btn-header {
     transition: 1s;
 }
 
-.card:hover.card img{
+.card:hover.card img {
     opacity: 1;
 }
 

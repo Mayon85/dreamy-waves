@@ -31,15 +31,16 @@
 </head>
 
 
-<body class="with-menu">
+<body id="main" class="with-menu">
 
     <!-- SIDEBAR -->
 
     <section id="side-menu">
 
-        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-left">
+        <nav id="slide-menu" class="navbar navbar-expand-md navbar-light bg-light fixed-left">
+            <a href="javascript:void(0)" class="closebtn text-secondary text-decoration-none" onclick="closeNav()">&times;</a>
             <a class="navbar-brand align-self-center m-0" href="index.html">
-                <img class="nav-logo" src="./images/logo.png" alt="Logo de Dreamy Waves">
+                <img class="nav-logo" src="./images/logo.svg" alt="Logo de Dreamy Waves">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                  aria-expanded="false" aria-label="Toggle navigation">
@@ -93,6 +94,8 @@
             </div>
         </nav>
 
+        <span class="open-menu" onclick="openNav()"> <i class="fas fa-ellipsis-v"></i> </span>
+
     </section>
 
 
@@ -105,7 +108,7 @@
                     <h1>Relax, dream, enjoy</h1>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
-                    <a href="index.html#discover" class="btn btn-light rounded-pill text-uppercase opacity">Découvrir
+                    <a href="index.html#discover" class="btn btn-light rounded-pill opacity">Découvrir
                         Dreamy Waves</a>
                 </div>
             </div>
@@ -138,7 +141,7 @@
                                 <li class="list-group-item bg-light text-muted">Pas de publicités</li>
                             </ul>
 
-                            <a href="#"
+                            <a href="new-account.html"
                                 class="btn btn-secondary btn-block py-3 mt-4 text-uppercase rounded-pill btn-tarifs">J'essaie
                                 !</a>
                         </div>
@@ -166,7 +169,7 @@
                                 <li class="list-group-item bg-light text-muted">Pas de publicités</li>
                             </ul>
 
-                            <a href="#"
+                            <a href="new-account.html"
                                 class="btn btn-secondary btn-block py-3 mt-4 text-uppercase rounded-pill btn-tarifs">Je
                                 me lance !</a>
                         </div>
@@ -194,7 +197,7 @@
                                 <li class="list-group-item">Pas de publicités</li>
                             </ul>
 
-                            <a href="#"
+                            <a href="new-account.html"
                                 class="btn btn-secondary btn-block py-3 mt-4 text-uppercase rounded-pill btn-tarifs">C'est
                                 pour moi !</a>
                         </div>
@@ -209,7 +212,13 @@
 
     </section>
 
-
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <a href="index.html" class="text-muted">← Revenir à la page d'Accueil </a>
+            </div>
+        </div>
+    </div>
 
     <!-- FOOTER -->
 
@@ -231,6 +240,20 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script>
+        /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+function openNav() {
+	document.getElementById("slide-menu").style.width = "250px";
+	document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+  function closeNav() {
+	document.getElementById("slide-menu").style.width = "0";
+	document.getElementById("main").style.marginLeft = "0";
+  } 
+    </script>
 </body>
 
 </html>
