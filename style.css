@@ -67,6 +67,7 @@ body {
         padding-top: 60px;
         transition: 0.5s;
         padding: 0;
+        padding-top: 20px;
     }
 
     .navbar .closebtn {
@@ -159,6 +160,34 @@ body {
     .open-menu {
         display: none;
     }
+}
+
+/*** ANIMATION LOGO NAV ***/
+
+#wave1, #wave4, #wave8 {
+    
+    animation: wave-move 1s infinite alternate;
+    transform-box: fill-box;
+    transform-origin: bottom;
+}
+
+#wave2, #wave5, #wave6 {
+    
+    animation: wave-move 1.3s infinite alternate;
+    transform-box: fill-box;
+    transform-origin: bottom;
+}
+
+#wave3, #wave7, #wave9 {
+    
+    animation: wave-move 1.5s infinite alternate;
+    transform-box: fill-box;
+    transform-origin: bottom;
+}
+
+@keyframes wave-move {
+    from {transform: scaleY(70%);}
+    to {transform: scaleY(100%);}
 }
 
 /*** HOME HEADER ***/
@@ -287,6 +316,16 @@ header .btn-header {
 }
 
 /*** PAGE TARIFS ***/
+
+#page-header-tarifs {
+    background: url(./images/hero-tarifs.jpg) no-repeat;
+    background-size: cover;
+    background-position: left;
+    height: 550px;
+    width: auto;
+}
+
+
 #tarifs .card h4 {
     color: #4A2461;
 }
