@@ -162,60 +162,21 @@ body {
     }
 }
 
-/*** ANIMATION LOGO NAV 
+/*** ANIMATION LOGO NAV ***/
 
-#wave1, #wave4, #wave8 {
-    
-    -webkit-animation: wave-move 1s infinite alternate;
-    
-            animation: wave-move 1s infinite alternate;
-    transform-box: fill-box;
-    transform-origin: bottom;
-}
-
-#wave2, #wave5, #wave6 {
-    
-    -webkit-animation: wave-move 1.3s infinite alternate;
-    
-            animation: wave-move 1.3s infinite alternate;
-    transform-box: fill-box;
-    transform-origin: bottom;
-}
-
-#wave3, #wave7, #wave9 {
-    
-    -webkit-animation: wave-move 1.5s infinite alternate;
-    
-            animation: wave-move 1.5s infinite alternate;
-    transform-box: fill-box;
-    transform-origin: bottom;
-}
-
-@-webkit-keyframes wave-move {
-    from {transform: scaleY(70%);}
-    to {transform: scaleY(100%);}
-}
-
-@keyframes wave-move {
-    from {transform: scaleY(70%);}
-    to {transform: scaleY(100%);}
-}
-
-***/
-
-#wave1, #wave4, #wave8 {
+#wave1, #wave4, #wave7 {
 	-webkit-animation: scale-up-ver-bottom 1s linear infinite alternate-reverse both;
             animation: scale-up-ver-bottom 1s linear infinite alternate-reverse both;
             transform-box: fill-box;
 }
 
-#wave2, #wave5, #wave6 {
+#wave2, #wave5, #wave8 {
 	-webkit-animation: scale-up-ver-bottom 1.1s linear infinite alternate-reverse both;
             animation: scale-up-ver-bottom 1.1s linear infinite alternate-reverse both;
             transform-box: fill-box;
 }
 
-#wave3, #wave7, #wave9 {
+#wave3, #wave6, #wave9 {
 	-webkit-animation: scale-up-ver-bottom 1.3s linear infinite alternate-reverse both;
             animation: scale-up-ver-bottom 1.3s linear infinite alternate-reverse both;
             transform-box: fill-box;
@@ -224,8 +185,8 @@ body {
 
  @-webkit-keyframes scale-up-ver-bottom {
     0% {
-      -webkit-transform: scaleY(0.4);
-              transform: scaleY(0.4);
+      -webkit-transform: scaleY(0.6);
+              transform: scaleY(0.6);
       -webkit-transform-origin: 0% 100%;
               transform-origin: 0% 100%;
     }
@@ -236,10 +197,11 @@ body {
               transform-origin: 0% 100%;
     }
   }
+
   @keyframes scale-up-ver-bottom {
     0% {
-      -webkit-transform: scaleY(0.4);
-              transform: scaleY(0.4);
+      -webkit-transform: scaleY(0.6);
+              transform: scaleY(0.6);
       -webkit-transform-origin: 0% 100%;
               transform-origin: 0% 100%;
     }
