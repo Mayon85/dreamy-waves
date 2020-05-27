@@ -286,27 +286,45 @@ header .btn-header {
 }
 
 .cover img {
-    width: 100%;
+    max-width: 350px;
     height: auto;
 }
 
-#slider {
-    width: 182px;
-    height: 4px;
-    background: #ebebeb;
-    border-radius: 2px;
-}
+.progress-container {
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 6px;
+  }
+  
+.progress {
+    background-color: #7F1E68;
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+  }
 
-#slider div {
+/* #slider div {
     width: 4px;
     height: 4px;
     margin-top: 1px;
     background: #4A2461;
     border-radius: 2px;
+} */
+
+#controls i {
+    cursor: pointer;
 }
 
-.controls i {
-    cursor: pointer;
+#controls .fa-play, #controls .fa-pause {
+    border: 3px solid #4A2461;
+    border-radius :50%;
+    color: #4A2461;
+}
+
+#volumeSlider {
+    width: 50px;
 }
 
 
